@@ -1,4 +1,6 @@
 from django.db import models
+from django.forms import ModelForm
+
 
 class Book(models.Model):
     """書籍"""
@@ -8,6 +10,7 @@ class Book(models.Model):
 
     def __str__(self):
         return self.name
+
 
 class Impression(models.Model):
     """感想"""
